@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Table from "../src/table/table";
+import "./style.css";
 
 interface AppProps {
   greeting: string
@@ -13,7 +15,7 @@ class App extends React.Component<AppProps> {
   render() {
     return (
       <div>
-        {this.props.greeting}
+        <Table />
       </div>
     )
   }
